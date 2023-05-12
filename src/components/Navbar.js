@@ -6,7 +6,7 @@ export default function Navbar(props) {
     if(props.darkMode) {
         myStyle = {
             color: 'white',
-            backgroundColor: 'black'
+            backgroundColor: (33,37,41)
         };
     } else {
         myStyle = {};
@@ -27,14 +27,14 @@ export default function Navbar(props) {
                 <a className="nav-link" href="/">{props.aboutText}</a>
               </li>
             </ul>
-            <div className="form-check form-switch mx-3">
+            <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onChange={props.toggleMode}/>
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={myStyle}>Enable Dark Mode</label>
+              <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={myStyle}>Dark Mode</label>
             </div>
-            <form className="d-flex" role="search">
+            {/* <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
